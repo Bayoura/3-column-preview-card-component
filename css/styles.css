@@ -12,9 +12,16 @@ body {
     font-size: var(--font-size);
     background-color: var(--color-lightGray);
     color: var(--color-transWhite);
+
+    /* to center the card*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-container {
+main {
     display: flex;
     flex-direction: column;
     margin: 70px 20px;
@@ -22,6 +29,7 @@ body {
 
 .card-section {
     padding: 50px;
+    max-width: 330px;
 }
 
 #sedans-section {
@@ -41,7 +49,7 @@ body {
 h1 {
     color: var(--color-lightGray);
     font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem; /* 36px */
     text-transform: uppercase;
     margin: 30px 0;
 }
@@ -55,8 +63,9 @@ h1 {
 button {
     cursor: pointer;
     font-family: inherit;
+    font-weight: 500;
     background-color: var(--color-lightGray);
-    border: none;
+    border: 2px solid var(--color-lightGray);
     border-radius: 50px;
     width: 140px;
     margin-top: 30px;
@@ -73,10 +82,6 @@ button {
 
 #btn-3 {
     color: var(--color-darkCyan);
-}
-
-button:hover {
-    border: 2px solid var(--color-lightGray);    
 }
 
 #btn-1:hover {
@@ -96,9 +101,12 @@ button:hover {
 
 /*-------------------------FOOTER---------------------------*/
 
+footer {
+    padding: 10px;
+}
+
 .attribution { 
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 0.6875rem; /* 11px*/
     color: black;
 }
     
@@ -121,8 +129,24 @@ a:active {
 
 /*--------------------------MEDIA-QUERIES--------------------------*/
 
-/* @media (min-width: 600px) {
-    .card-container {
+@media (min-width: 1000px) {
+    main {
         flex-direction: row;
     }
-} */
+
+    .card-section {
+        padding: 60px;
+    }
+
+    button {
+        margin-top: 70px;
+    }
+
+    #sedans-section {
+        border-radius: 8px 0 0 8px;
+    }
+    
+    #luxury-section {
+        border-radius: 0 8px 8px 0;
+    }
+}
