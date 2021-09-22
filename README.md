@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-While working on this project, I researched more about HTML tags, in particular `<section>` and `<article>`. You shouldn't just always use the `<div>` tag to wrap content. While that may be the best option in some cases, in many other there are better suited tags. Using other tags also has many benefits; mainly better readability and accessibility. Screen readers use tags and specific landmarks (main, header etc.) to navigate the site. If there are only divs all over the place, users that are dependent on assistive technologies will have a hard time accessing the site. Good semantics are important!  
+While working on this project, I researched more about HTML tags, in particular `<section>` and `<article>`. You shouldn't just always use the `<div>` tag to wrap content. While that may be the best option in some cases, in many others there are better suited tags. Using other tags also has many benefits; mainly better readability and accessibility. Screen readers use tags and specific landmarks (main, header etc.) to navigate the site. If there are only divs all over the place, users that are dependent on assistive technologies will have a hard time accessing the site. Good semantics are important!  
 Overall, this project was fairly easy.
 
 ### Continued development
